@@ -12,11 +12,50 @@ body {
   font-family: Arial, sans-serif; 
   background:#fff; 
   color:#333; 
-}
+nav{ <!-- Navigation Bar -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="password-generator.html">Password Generator</a>
+  <a href="password-safety-class.html">Password Safety Class</a>
+  <a href="top-vpns.html">Top VPNs</a>
+</nav>
+
+<style>
+  /* Navigation bar styling */
+  nav {
+    background-color: #1d8cf8;
+    display: flex;
+    justify-content: center; /* center links horizontally */
+    flex-wrap: wrap;         /* wrap links on smaller screens */
+    gap: 15px;               /* space between links */
+    padding: 12px 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;       /* space inside each link */
+    border-radius: 6px;      /* rounded corners */
+    transition: background 0.2s;
+  }
+
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* subtle hover effect */
+  }
+
+  /* Responsive adjustments for small screens */
+  @media (max-width: 500px) {
+    nav a {
+      padding: 6px 10px;
+      font-size: 0.9rem;
+    }
+  }
+</style>
 
 nav { 
   background:#1d8cf8; 
-  display:flex; 
+ display:flex; 
   justify-content:center; 
   flex-wrap:wrap; 
   gap:15px; 

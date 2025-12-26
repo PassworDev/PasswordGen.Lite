@@ -1,0 +1,84 @@
+/* PASSBOT STYLES */
+
+/* SIDEBAR */
+#passbotSidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #1f1f1f;
+    color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+#passbotHeader {
+    padding: 10px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#passbotHeader h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+#passbotHeader #passbotClose {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#passbotMessages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+#passbotMessages .userMsg {
+    text-align: right;
+    margin: 5px 0;
+    color: #00bfff;
+}
+
+#passbotMessages .botMsg {
+    text-align: left;
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+#passbotMessages a {
+    color: #00bfff;
+    text-decoration: underline;
+}
+
+#passbotInput {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* BUTTON */
+#passbotBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
